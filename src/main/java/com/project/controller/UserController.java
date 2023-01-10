@@ -22,7 +22,7 @@ public class UserController {
         model.addAttribute("users", userService.listUsers());
         return "users";
     }
-    @RequestMapping("/addNewUser")
+    @GetMapping("/addNewUser")
     public String getAddUserPage(ModelMap model){
         User user = new User();
         model.addAttribute("user", user);
